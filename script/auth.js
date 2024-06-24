@@ -4,6 +4,7 @@
 
 const apiBaseURL = "http://microbloglite.us-east-2.elasticbeanstalk.com";
 // Backup server (mirror):   "https://microbloglite.onrender.com"
+//token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNhbXJpIiwiaWF0IjoxNzE5MjM4OTEwLCJleHAiOjE3MTkzMjUzMTB9.Ef13QDhh_N6SNswwGeKQQ_BV3p4H1F4EzkuQqeszvFg"
 
 // NOTE: API documentation is available at /docs 
 // For example: http://microbloglite.us-east-2.elasticbeanstalk.com/docs
