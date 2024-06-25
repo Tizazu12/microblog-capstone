@@ -20,5 +20,9 @@ loginForm.onsubmit = function (event) {
     loginForm.loginButton.disabled = true;
 
     // Time to actually process the login using the function from auth.js!
-    login(loginData);
+   // login(loginData);
+   window.localStorage.setItem("login-data", JSON.stringify(loginData));
+   window.location.href = "../posts/index.html"
 };
+
+console.log(localStorage.getItem("login-data"))

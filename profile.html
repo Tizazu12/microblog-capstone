@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Microblog - Profile</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../styles/global.css">
 </head>
 <body>
     <header>
@@ -16,7 +16,7 @@
         <form id="new-post-form">
             <label for="post-content">Post content:</label>
             <textarea id="post-content" name="post-content"></textarea><br><br>
-            <button type="submit">Create post</button>
+            <button id="post">Create post</button>
         </form>
         <h2>My posts</h2>
         <ul id="my-post-list">
@@ -25,6 +25,7 @@
         <button id="logout-btn">Logout</button>
         <a href="posts/index.html">Posts</a>
     </main>
-    <script src="script.js"></script>
+    <script src="../script/profile.js"></script>
+    <script src="../script/auth.js"></script>
 </body>
 </html>

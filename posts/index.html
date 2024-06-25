@@ -14,17 +14,18 @@
         crossorigin="anonymous"></script>
 
     <!-- Global CSS (CSS rules you want applied to all pages) -->
-    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="../styles/global.css">
 
     <!-- Page-specific CSS -->
-    <link rel="stylesheet" href="styles/posts.css">
+    <link rel="stylesheet" href="../styles/posts.css">
 
     <title>/POSTS</title>
 
     <!-- Run BEFORE page is finished loading (before window.onload): -->
-    <script src="script/auth.js"></script>
+    <script src="../script/auth.js"></script>
     <script>
-        if (isLoggedIn() === false) window.location.replace("/");
+        // console.log(window.localStorage.getItem("login-data"))
+       if (isLoggedIn() === false) window.location.replace("../login.html");
     </script>
 </head>
 <body>
@@ -36,11 +37,13 @@
     <main>
         <ul id="post-list"></ul>
                <button id="logout-btn">Logout</button>
-               <a href="profile.html">Profile</a></main>
+               <a href="../profile.html">Profile</a>
+    </main>
 
     <footer></footer>
 
     <!-- Page-specific code -->
-    <script src="script/posts.js"></script>
+    <script src="../script/posts.js"></script>
+    
 </body>
 </html>
