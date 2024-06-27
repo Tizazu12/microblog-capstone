@@ -26,7 +26,7 @@ function isLoggedIn () {
 
 
     console.log(loginData)
-    console.log(Boolean(loginData.token))
+    //console.log(Boolean(loginData.token))
 
 
     return Boolean(loginData.token);

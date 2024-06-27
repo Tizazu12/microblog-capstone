@@ -68,4 +68,94 @@ body {
     cursor: pointer;
   }
   
-  
+  body {
+       background-color: #f2f2f2;
+    }
+    
+        /* Add some basic styling to the page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9; /* light gray background */
+        }
+        header {
+            background-color: #333; /* dark gray background */
+            color: #fff; /* white text */
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        form {
+            width: 50%; /* make the form 50% of the page width */
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+        }
+       
+       
+        #my-post-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        #my-post-list li {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        #my-post-list li:last-child {
+            border-bottom: none;
+        }
+        #logout-btn {
+            margin-top: 20px;
+        }
+    /* Style the logout button */
+#logout-btn {
+  background-color: #ff6961; /* Red color */
+  color: #ffffff; /* White text */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#logout-btn:hover {
+  background-color: #ff3737; /* Darker red on hover */
+}
+
+/* Style the "Posts" link */
+a {
+  text-decoration: none;
+  color: #337ab7; /* Blue color */
+}
+
+a:hover {
+  color: #23527c; /* Darker blue on hover */
+}
+
+a:active {
+  color: #337ab7; /* Blue color on active */
+}
+body {
+  background-color: #f0f0f0; /* Light gray background */
+}

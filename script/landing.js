@@ -1,4 +1,3 @@
-/* Landing Page JavaScript */
 
 "use strict";
 
@@ -20,9 +19,24 @@ loginForm.onsubmit = function (event) {
     loginForm.loginButton.disabled = true;
 
     // Time to actually process the login using the function from auth.js!
-   // login(loginData);
-   window.localStorage.setItem("login-data", JSON.stringify(loginData));
-   window.location.href = "../posts/index.html"
+    login(loginData)
+        .then(response => {
+            if (response.ok) {
+                return response.json();
+            } else {
+                throw new Error("Login failed");
+            }
+        })
+        .then(data => {
+            window.localStorage.setItem("login-data", JSON.stringify(data));
+            window.location.href = "./posts/index.html";
+        })
+        .catch(error => {
+            console.error("Error logging in:", error);
+            loginForm.loginButton.disabled = false;
+        });
 };
 
-console.log(localStorage.getItem("login-data"))
+console.log(localStorage.getItem("login-data"));
+
+

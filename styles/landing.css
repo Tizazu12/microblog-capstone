@@ -1,1 +1,8 @@
 /* Landing Page CSS */
+body {
+  background-image: url('images/score.jpeg'); /* Replace with your image URL */
+  background-size: cover; /* Scale the image to cover the entire background */
+  background-position: center; /* Center the image horizontally and vertically */
+  height: 100vh; /* Set the height of the body to the full viewport height */
+  margin: 0; /* Remove any margin to ensure the image covers the entire page */
+}
