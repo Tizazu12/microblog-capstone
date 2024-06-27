@@ -1,1 +1,29 @@
 /* Posts Page CSS */
+
+
+.card {
+  margin-bottom: 20px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 16px;
+  color: #666;
+} */
+h1 {
+  font-family: 'Calibri', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  font-style: italic;
+  
+}

@@ -31,29 +31,28 @@
 <body  class="bg-light">
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">WanderWave</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../profile.html">Profile</a>
-                        </li>
-                        <li class="nav-item">
-                            <button id="logout-btn" class="nav-link btn btn-link">Logout</button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <h1>POSTS PAGE</h1>
+        <h1 style="text-align: center; color: #656748;" id="playfair-display-header"> Wanderwave </h1>
+        <nav class="nav nav-pills nav-justified">
+            <a class="nav-link active" aria-current="page" href="/posts/index.html">Post</a>
+            <a class="nav-link" href="/login.html">Home</a>
+            <a class="nav-link" href="/profile.html">Profile</a>
+            <a class="nav-link" href="/register.html">Register</a>
+            <a class="nav-link" href="login.html"><class="nav-link" id="logout-btn">Logout</a>
+            
+        
     </header>
 
     <main>
-        <ul id="post-list"></ul>
+       <div class="container">
+    <div class="row">
+     <div class="col-md-8 offset-md-2">
+      <div class="card-columns">
+          <ul id="post-list"></ul>
+       </div>
+     </div>
+   </div>
+  </div>
+        
     </main>
 
     <footer></footer>

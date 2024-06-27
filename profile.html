@@ -4,15 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Microblog - Profile</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styles/global.css">
     
 </head>
 <body>
     <header>
-        <h1>Microblog - Profile</h1>
+        <h1 style="text-align: center; color: #656748;" id="playfair-display-header">Wanderwave</h1>
+        <nav class="nav nav-pills nav-justified">
+            <a class="nav-link active" aria-current="page" href="profile.html">profile</a>
+            <a class="nav-link" href="login.html">Home</a>
+            <a class="nav-link" href="/posts/index.html">Post</a>
+            <a class="nav-link" href="register.html">Register</a>
+            <a class="nav-link" href="login.html"><class="nav-link" id="logout-btn">Logout</a>
+            
+          </nav>
     </header>
+    <!-- <div>
+        <div class="row">
+            <div class="col-lg-4 text-center">
+              <img src="images/score.jpeg" class="bd-placeholder-img rounded-circle" width="300" height="300" role="img"
+                aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <h2 class="fw-normal">Username</h2>
+              <p>Bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+              <p>Joined: January 2024</p>
+              <p>Posts: 10</p>
+              <p>Followers: 100</p>
+              <p>Following: 50</p>
+            </div>/.col-lg-4 -->
+          </div>
+          <div class="card">
+            <div class="card-body text-center">
+              <img src="images/1051B5B9-7B1B-4356-9FF1-FB1D80981EB3_1_105_c.jpeg" class="bd-placeholder-img rounded-circle" width="300" height="300" role="img"
+                aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <h2 class="fw-normal" id="username"></h2>
+              <p id="bio"></p>
+              <p id="joined"></p>
+              <p id="posts"></p>
+              <p id="followers"></p>
+              <p id="following"></p>
+            </div>
+          </div>
+       
     <main>
-        <h2>Create a new post</h2>
+        <div class="profile"></div>
+        <h2 id="playfair-display-header" >Create a new post</h2>
         <form id="new-post-form">
             <label for="post-content">Post content:</label>
             <textarea id="post-content" name="post-content"></textarea><br><br>
@@ -22,8 +63,8 @@
         <div id="my-post-list">
             
         </div>
-        <button id="logout-btn">Logout</button>
-        <a href="posts/index.html">Posts</a>
+        <!-- <button  id="logout-btn">Logout</button> -->
+        <a class="btn btn-primary"href="posts/index.html">Posts</a>
     </main>
     <script src="../script/profile.js"></script>
     <script src="../script/auth.js"></script>

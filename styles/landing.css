@@ -1,8 +1,63 @@
 /* Landing Page CSS */
+
+
+form {
+  width: 50%; /* make the form 50% of the page width */
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+a {
+  text-decoration: none;
+  color: #337ab7; /* Blue color */
+}
+
+
+
+.container-fluid {
+  padding: 0;
+}
+
+.row {
+  height: 100vh; /* adjust the height as needed */
+}
+
+.col-md-6 {
+  padding: 20px;
+}
+
+#login {
+  max-width: 300px; /* adjust the width as needed */
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#playfair-display-header {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.card-img {
+  filter: brightness(0.7); /* adjust the value to your liking */
+}
 body {
-  background-image: url('images/score.jpeg'); /* Replace with your image URL */
-  background-size: cover; /* Scale the image to cover the entire background */
-  background-position: center; /* Center the image horizontally and vertically */
-  height: 100vh; /* Set the height of the body to the full viewport height */
-  margin: 0; /* Remove any margin to ensure the image covers the entire page */
+  background-color: #ececec;
 }

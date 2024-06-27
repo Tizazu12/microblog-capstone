@@ -11,9 +11,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+BR:wght@100..400&display=swap" rel="stylesheet">
 
-    <!-- Global CSS (CSS rules you want applied to all pages) -->
-    <link rel="stylesheet" href="styles/global.css">
+    <!-- Global CSS (CSS rules you want applied to all pages)
+    <link rel="stylesheet" href="styles/gloal.css"> -->
 
     <!-- Page-specific CSS -->
     <link rel="stylesheet" href="../styles/landing.css">
@@ -29,35 +32,53 @@
 <body>
 
     <header>
-        <h1>Welcome to <code>YOUR MICROBLOG NETWORK</code></h1>
+        <!-- <h1>Welcome to <code>YOUR MICROBLOG NETWORK</code></h1> -->
+        
     </header>
 
     <main>
-        <div class="card mb-3">
-            <img src="images/score.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+       
+
+        <div class="card text-bg-dark">
+            <img src="images/score.jpeg" class="card-img" alt="...">
+            <div class="card-img-overlay" style="display: flex; flex-direction: column; justify-content: center; align-items: center;"> <!-- Add this style -->
+              <h1 class="card-title" style="text-align: center; color: #656748;" id="playfair-display-header"><strong>Welcome to Wanderwave</strong> </h1>
+              <h4 class="card-text" style="color: hsla(60, 15%, 90%, 0.929); "id="playfair-display-header" ><strong>platform designed for sharing brief insights about your craft, hobby, 
+                or profession can be incredibly valuable for both enthusiasts and professionals alike. It serves as a virtual hub where individuals can exchange ideas, techniques, and experiences in a concise and accessible format.</strong></h4>
+              <h4 class="card-text" style="color: hsla(207, 26%, 93%, 0.929); text-align: center, text-shadow 1px 1px 2px rgba(0, 0, 0, 0.5)"id="playfair-display-header"> <strong> You're a seasoned practitioner looking to impart wisdom or a newcomer seeking guidance, such a platform fosters learning, community building, and collaboration. It's a space where passion meets expertise,
+                 creating a dynamic environment where creativity flourishes and knowledge is freely exchanged.</strong></h4>
             </div>
           </div>
-          
-
-        <form id="login">
-            <div>
-                <label for="username">Username</label>
-                <input type="text" id="username" minlength="">
+        
+          <div class="card mb-3">
+            <div class="card-body">
+             <h1 class="card-title"style="color: #656748; text-align: center;">Welcome to <strong> MICROBLOG NETWORK</strong></h1>
+              
+              <form id="login">
+                <div>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" minlength="">
+                </div>
+    
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" minlength="">
+                </div>
+    
+                <button id="loginButton" class="btn btn-primary"type="submit">Login</button>
+            </form>
+            <p><a href="./register.html"> New Here? Register now!</a></p>
+             </div>
+                </div>
             </div>
-
-            <div>
-                <label for="password">Password</label>
-                <input type="password" id="password" minlength="">
-            </div>
-
-            <button id="loginButton" type="submit">Login</button>
-        </form>
-        <p><a href="./register.html"> New Here? Register now!</a></p>
-
+          </div>
+          <!-- <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6 bg-image">
+              </div>     
+         <div class="col-md-6"> -->
+            
+        
     </main>
 
     <footer></footer>

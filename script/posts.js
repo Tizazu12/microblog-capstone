@@ -54,7 +54,7 @@ function displayPosts(posts) {
         <pclass="card-text"><small class="text-muted">Posted By: ${post.username},on ${post.createdAt} </small></p>
   
         <div class="Likes:">${post.likes.length} Likes 
-            <button onclick="like('${post._id}')">Like</button>
+            <button class="btn btn-primary like-btn"onclick="like('${post._id}')">Like</button>
         </div>`;
     
     postList.appendChild(postItem);

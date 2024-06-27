@@ -16,6 +16,15 @@
 :root {
     font-size: 1rem;
 }
+nav-pills.nav-link {
+   color: #ffffff; /* white text color */
+   margin-right: 20px; /* add space between nav items */
+   text-decoration: none; /* remove underline */
+  }
+  .nav-pills.nav-link.active {
+      background-color: #333; /* dark gray background for active item */
+     color: #ffffff; /* white text color for active item */
+    }
 
 /* styles.css */
 body {
@@ -111,8 +120,17 @@ body {
             font-size: 16px;
             border: 1px solid #ccc;
         }
-       
-       
+        button[type="button"] {
+            background-color: #4CAF50; /* green background */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button[type="button"]:hover {
+            background-color: #3e8e41; 
+        }
         #my-post-list {
             list-style: none;
             padding: 0;
@@ -128,34 +146,10 @@ body {
         #logout-btn {
             margin-top: 20px;
         }
-    /* Style the logout button */
-#logout-btn {
-  background-color: #ff6961; /* Red color */
-  color: #ffffff; /* White text */
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-#logout-btn:hover {
-  background-color: #ff3737; /* Darker red on hover */
-}
-
-/* Style the "Posts" link */
-a {
-  text-decoration: none;
-  color: #337ab7; /* Blue color */
-}
-
-a:hover {
-  color: #23527c; /* Darker blue on hover */
-}
-
-a:active {
-  color: #337ab7; /* Blue color on active */
-}
-body {
-  background-color: #f0f0f0; /* Light gray background */
-}
+        #playfair-display-header {
+          font-family: "Playfair Display", serif;
+          font-optical-sizing: auto;
+          font-weight: 700;
+          font-style: normal;
+        }
+        
